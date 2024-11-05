@@ -25,6 +25,11 @@
         name: apache2
         state: present
 
+    - name: Install net-tools
+      package:
+        name: net-tools
+        state: present
+
     - name: Ensure apache2 is started and enabled on boot
       service:
         name: apache2
